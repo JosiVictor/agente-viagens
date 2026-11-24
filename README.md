@@ -44,22 +44,11 @@ streamlit run app.py
 ## 5. Casos de uso testados
 | # | Pergunta | Ferramentas esperadas | Resultado observado |
 |---|---|---|---|
-| 1 | "Vou para Santiago, no Chile, nesta semana. Como estará o clima nos próximos dias?" | previsao_do_tempo | Aqui está a previsão do tempo para Santiago nos próximos dias:
-
-Segunda (24/11): 13°C a 28°C — Predominantemente limpo ☀️
-Terça (25/11): 16°C a 32°C — Predominantemente limpo ☀️
-Quarta (26/11): 18°C a 32°C — Nublado (chance de chuva de 31%) ☁️
-Quinta (27/11): 16°C a 32°C — Predominantemente limpo ☀️
-Sexta (28/11): 17°C a 32°C — Nublado ☁️
-Sábado (29/11): 17°C a 32°C — Nublado ☁️
-Domingo (30/11): 19°C a 30°C — Nublado ☁️
-Os dias estarão bem quentes (chegando a casa dos 32°C), então não esqueça o protetor solar e óculos de sol!
-
-Precisa de ajuda com mais alguma coisa para a sua viagem, como passeios ou orçamento? |
-| 2 | "Quanto são 800 dólares em reais hoje?" | converter_moeda | _preencher_ |
-| 3 | "Quais são as principais atrações de Nova York?" | pesquisar_destino | _preencher_ |
-| 4 | "Quero passar 6 dias em Roma, gastando 90 euros por dia, com passagem de R$ 5.200. Qual o total em reais?" | converter_moeda + calcular_orcamento | _preencher_ |
-| 5 | "E se eu ficar 9 dias em vez de 6, e como estará o clima lá?" | memória + calcular_orcamento + previsao_do_tempo | _preencher_ |
+| 1 | "Vou para Santiago, no Chile, nesta semana. Como estará o clima nos próximos dias?" | previsao_do_tempo |  previsao_do_tempo | ✅ |
+| 2 | "Quanto são 800 dólares em reais hoje?" | converter_moeda | US$ 800 equivalem a aproximadamente R$ 4.766,77 (com base na cotação atual de 1 USD = 5,96 BRL). | ✅ |
+| 3 | "Quais são as principais atrações de Nova York?" | pesquisar_destino | listou algumas atrações | ✅ |
+| 4 | "Quero passar 6 dias em Roma, gastando 90 euros por dia, com passagem de R$ 5.200. Qual o total em reais?" | converter_moeda + calcular_orcamento | Custo diário/Passagens/Total da viagem | ✅ |
+| 5 | "E se eu ficar 9 dias em vez de 6, e como estará o clima lá?" | memória + calcular_orcamento + previsao_do_tempo | Calculou o orçamento e refez a previsão do tempo para 7 dias, com sugestão de levar casacos. | ✅ |
 
 ## 6. Reflexão
 **Sem o agente:** abrir site de clima, site de câmbio, Wikipédia e calculadora; copiar valores entre abas;
