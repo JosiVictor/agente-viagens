@@ -48,7 +48,7 @@ streamlit run app.py
 | 2 | "Quanto são 800 dólares em reais hoje?" | converter_moeda | _preencher_ |
 | 3 | "Quais são as principais atrações de Nova York?" | pesquisar_destino | _preencher_ |
 | 4 | "Quero passar 6 dias em Roma, gastando 90 euros por dia, com passagem de R$ 5.200. Qual o total em reais?" | converter_moeda + calcular_orcamento | _preencher_ |
-| 5 | (logo após o 4) "E se eu ficar 9 dias em vez de 6, e como estará o clima lá?" | memória + calcular_orcamento + previsao_do_tempo | _preencher_ |
+| 5 | "E se eu ficar 9 dias em vez de 6, e como estará o clima lá?" | memória + calcular_orcamento + previsao_do_tempo | _preencher_ |
 
 ## 6. Reflexão
 **Sem o agente:** abrir site de clima, site de câmbio, Wikipédia e calculadora; copiar valores entre abas;
